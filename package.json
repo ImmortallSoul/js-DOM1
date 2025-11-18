@@ -1,7 +1,7 @@
 {
   "name": "js-dom1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Що таке DOM?\r DOM — це програмний інтерфейс для веб-документів. Він представляє структуру документа HTML або XML як ієрархічне дерево, де кожен елемент документа є об'єктом, з яким можна взаємодіяти через JavaScript.",
   "main": "index.js",
   "scripts": {
     "start": "lite-server",
@@ -12,5 +12,16 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImmortallSoul/js-DOM1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ImmortallSoul/js-DOM1/issues"
+  },
+  "homepage": "https://github.com/ImmortallSoul/js-DOM1#readme"
 }

@@ -1,0 +1,120 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: white;
+}
+
+.calculator-container {
+    background-color: black;
+    padding: 10px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+.display {
+    text-align: right;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.input-field {
+    background: none;
+    border: none;
+    color: #a0a0a0;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: right;
+    outline: none;
+}
+
+.result-field {
+    font-size: 60px;
+    font-weight: 200;
+    color: white;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.1s ease-out, color 0.1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    color: white;
+    outline: none;
+}
+
+.digit-btn {
+    background-color: #333;
+}
+.digit-btn:hover {
+    background-color: #555;
+}
+
+.zero-btn {
+    grid-column: span 2;
+    border-radius: 35px;
+    justify-content: flex-start;
+    padding-left: 25px;
+    width: unset;
+}
+.function-btn {
+    background-color: #a5a5a5;
+    color: black;
+}
+.function-btn:hover {
+    background-color: #d8d8d8;
+}
+.operator-btn {
+    background-color: #f1a33c;
+    color: white;
+}
+.operator-btn:hover {
+    background-color: #f7b469;
+}
+.operator-btn.active {
+    background-color: white;
+    color: #f1a33c;
+}
+
+
+.error-text {
+    color: #dc3545;
+    font-weight: bold;
+    min-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    right: 12px;
+    margin: 0;
+}
